@@ -12,7 +12,11 @@ if (num < -99 || num > 99){
         result/=10;
     }
     result%=10;
+    if(result < 0){
+        Console.WriteLine($"Третья цифра числа {num} -> {result * -1}");
+    }else{
     Console.WriteLine($"Третья цифра числа {num} -> {result}");
+    }
 }else{
     Console.WriteLine($"Третьей цифры у числа {num} нет");
 }
